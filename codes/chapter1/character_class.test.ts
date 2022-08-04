@@ -13,13 +13,13 @@ I only want to seperete...`
 
 Deno.test("separateの誤字を含めた正規表現による検索", () => {
     assertEquals(
+        sentences.filter((sentence) => sentence.match(/sep[ea]r[ea]te/)),
         [
             "I want to separate this!",
             "Yes, I would like to seperate this.",
             "Because to separete this is My Life Mission.",
             "I only want to seperete...",
         ] as string[],
-        sentences.filter((sentence) => sentence.match(/sep[ea]r[ea]te/)),
     )
 })
 

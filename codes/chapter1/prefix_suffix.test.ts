@@ -9,21 +9,21 @@ Thank you for U`
 
 Deno.test("行頭+c+a+tの検索", () => {
     assertEquals(
-        ["cat is pretty?"],
         sentences.filter((sentence) => sentence.match(/^cat/)),
+        ["cat is pretty?"],
     )
 })
 
 Deno.test("c+a+t+末尾の検索", () => {
     assertEquals(
-        ["This is a cat"],
         sentences.filter((sentence) => sentence.match(/cat$/)),
+        ["This is a cat"],
     )
 })
 
 Deno.test("行頭+末尾の検索", () => {
     assertEquals(
-        [""],
         sentences.filter((sentence) => sentence.match(/^$/)),
+        [""],
     )
 })

@@ -9,20 +9,20 @@ Deno.test('catを含む全て', () => {
 Deno.test('catの単語のみ', () => {
     assertEquals(
         ["cat"],
-        words.filter(word => word.match(/\bcat\b/))
+        words.filter(word => word.match(/\bcat\b/)),
     )
 })
 
 Deno.test('catから始まる単語のみ', () => {
     assertEquals(
         ["cat", "catch"],
-        words.filter(word => word.match(/\bcat/))
+        words.filter(word => word.match(/\bcat/)),
     )
 })
 
 Deno.test('catで終わる単語のみ', () => {
     assertEquals(
         ["cat", "tomcat", "concat"],
-        words.filter(word => word.match(/cat\b/))
+        words.filter(word => word.match(/cat\b/)),
     )
 })
