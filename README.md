@@ -60,3 +60,12 @@ deno test
 「03[-./]19[-./]76｣としてもいいが、「03.19.76｣の方が楽だ
 
 .はクラスの中だとメタ文字にはならない。
+
+[chapter1 dot](./codes/chapter1/dot.test.ts)
+
+#### 選択
+「Bob|Robert｣は、BobまたはRobertの場合にマッチする。
+
+「gray|grey｣は「gr(e|a)y｣や「gr[ae]y｣と同義である。（丸括弧もメタ文字である）
+
+[chapter1 select](./codes/chapter1/select.test.ts)
