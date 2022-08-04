@@ -36,4 +36,5 @@ Deno.test("Hタグのmatch", () => {
 Deno.test('あいうえお以外の文字', () => {
     assert("ん".match(/[^あ-お]/))
     assert(!"う".match(/[^あ-お]/))
+    assert("q ".match(/q[^e]/))
 })
