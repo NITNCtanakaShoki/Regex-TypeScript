@@ -1,7 +1,7 @@
 import { assert } from "../deps.ts"
 
 Deno.test('colorとcolourにmatch', () => {
-    const isMatch = (target: string) => target.match(/colou?r/)
+    const isMatch = (target: string) => target.match(/colou?r/) !== null
 
     assert( isMatch('color'))
     assert( isMatch('colour'))

@@ -24,7 +24,7 @@ Deno.test("separateの誤字を含めた正規表現による検索", () => {
 })
 
 Deno.test("Hタグのmatch", () => {
-    const isMatch = (target: string) => target.match(/<[Hh][1-6]>/)
+    const isMatch = (target: string) => target.match(/<[Hh][1-6]>/) !== null
     assert(isMatch('<h1>'))
     assert(isMatch('<H2>'))
     assert(isMatch('<H6>'))
