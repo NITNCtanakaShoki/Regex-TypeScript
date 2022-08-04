@@ -37,3 +37,10 @@
 「sep[ea]r[ea]te｣
 
 [chapter1 class character](./codes/chapter1/character_class.test.ts)
+
+クラスの中には好きな数だけ文字を並べることができ、たとえば「[123456]｣は、1〜6のうちのいずれともマッチする。
+
+#### 否定文字クラス
+「[...]｣の代わりに「[^...]｣というクラスを使うと、そこに指定されていない任意の文字とマッチする。例えば、「[^1-6]｣は1から6以外の文字とマッチする。^をクラスの先頭に置くと、そこに指定されたものが否定される。
+
+[chapter1 class character](./codes/chapter1/character_class.test.ts)

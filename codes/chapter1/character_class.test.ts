@@ -1,6 +1,7 @@
-import { assertEquals } from "../deps.ts"
+import { assert, assertEquals } from "../deps.ts"
 
-const sentences = `    Hello, World!
+const sentences =
+`    Hello, World!
 I want to separate this!
 Really?
 Yes, I would like to seperate this.
@@ -20,4 +21,19 @@ Deno.test("separateの誤字を含めた正規表現による検索", () => {
         ] as string[],
         sentences.filter((sentence) => sentence.match(/sep[ea]r[ea]te/)),
     )
+})
+
+Deno.test("Hタグのmatch", () => {
+    const isMatch = (target: string) => target.match(/<[Hh][1-6]>/)
+    assert(isMatch('<h1>'))
+    assert(isMatch('<H2>'))
+    assert(isMatch('<H6>'))
+    assert(!isMatch('<a1>'))
+    assert(!isMatch('<h0>'))
+    assert(!isMatch('<h7>'))
+})
+
+Deno.test('あいうえお以外の文字', () => {
+    assert("ん".match(/[^あ-お]/))
+    assert(!"う".match(/[^あ-お]/))
 })
