@@ -23,3 +23,12 @@
 テキストにおけるチェック対象行の**末尾**を表す。
 
 [chapter1 prefix_suffix](./codes/chapter1/prefix_suffix.ts)
+
+#### 文字クラス(character class)
+その場所に存在しても良い文字の集合を指定できる。
+
+"separate"という文字を検索したいが、よく"seperate", "separete"だったか毎回忘れるので、eでもaでも許容して検索したい時など
+
+「sep[ea]r[ea]te｣
+
+[chapter1 class character](./codes/chapter1/character_class.ts)
