@@ -69,3 +69,16 @@ deno test
 「gray|grey｣は「gr(e|a)y｣や「gr[ae]y｣と同義である。（丸括弧もメタ文字である）
 
 [chapter1 select](./codes/chapter1/select.test.ts)
+
+#### 単語の初めと終わり
+「\<｣が単語の初めの部分を指し、「\>｣が単語の終わりを示すメタ文字。
+
+catという単語を探す際には、「\<cat\>｣
+
+catから始まる単語であれば、「\<cat｣
+
+catで終わる単語であれば、「cat\>｣
+
+などなど。しかし、JavaScriptの正規表現では通用しなく、どちらも「\b｣で単語の始まりと終わりのメタ文字となっていた。
+
+[chapter1 word start end](./codes/chapter1/work_boundary.test.ts)
