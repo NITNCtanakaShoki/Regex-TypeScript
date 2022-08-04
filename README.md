@@ -1,5 +1,14 @@
 # TypeScript Regex Practice
 
+## Usage
+denoで実行するものになります。denoをインストールした上で以下のコマンドを叩いてください。
+
+```shell
+git clone https://github.com/NITNCtanakaShoki/Regex-TypeScript.git
+cd Regex-TypeScript
+deno test
+```
+
 ## 正規表現
 
 本格的な正規表現は2種類の文字から成り立っている。「\*｣のような特殊文字は**メタ文字**(metacharacter)と呼ばれ、それ以外のものは全て**リテラル**(literal)と呼ばれる。
