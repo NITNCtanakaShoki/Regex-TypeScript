@@ -82,3 +82,14 @@ catで終わる単語であれば、「cat\>｣
 などなど。しかし、JavaScriptの正規表現では通用しなく、どちらも「\b｣で単語の始まりと終わりのメタ文字となっていた。
 
 [chapter1 word start end](./codes/chapter1/work_boundary.test.ts)
+
+#### 疑問符
+あってもなくてもいい文字。
+
+colorとcolourは、uがあるかないかでしかない。これらを指定する際には、
+
+「colou?r｣で指定できる。疑問符?は直前の文字に対してのみ適用される。
+
+「(Jul|July) (fourth|4th|4)｣は「July? (fourth|4(th)?)｣と同義である。
+
+[chapter1 question mark](./codes/chapter1/question_mark.test.ts)
