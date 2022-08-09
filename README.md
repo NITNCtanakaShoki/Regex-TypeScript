@@ -93,3 +93,17 @@ colorとcolourは、uがあるかないかでしかない。これらを指定�
 「(Jul|July) (fourth|4th|4)｣は「July? (fourth|4(th)?)｣と同義である。
 
 [chapter1 question mark](./codes/chapter1/question_mark.test.ts)
+
+#### 繰り返し
+直前の文字を繰り返す。
+
+#### 「+｣
+直前にある要素を1個以上を意味する
+
+[chapter1 plus](./codes/chapter1/repeat.test.ts)
+
+##### 「*｣（スター）
+直前にある要素を0個以上を意味する
+
+[chapter1 star](./codes/chapter1/repeat.test.ts)
+
